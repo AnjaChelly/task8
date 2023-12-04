@@ -1,0 +1,103 @@
+body{ 
+    margin: 0%;
+    padding: 0%; 
+    font-family: Arial, Helvetica, sans-serif; 
+    background: url(image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container{  
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.plan{ 
+font-size: 35px;
+color: black(255, 0, 0, 0.815);
+padding-left: 50px;
+padding-top: 140px;
+}
+
+.btnajout{
+    background: none;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 160px;
+}
+
+#popup {
+    width: 500px;
+    height:350px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffff;
+    border: 2px solid rgb(189, 77, 96);
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+
+h2{
+    color: rgb(189, 77, 96);
+    font-size: 20px;
+    padding-top:5px;
+    padding-left:20px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    font-size: 18px;
+    gap: 10px;
+}
+
+.title,.date{border: 2px solid rgb(189, 77, 96);
+     border-radius: 5px;
+width: 300px;
+height: 20px;}
+
+.description{border: 2px solid rgb(189, 77, 96);
+    border-radius: 5px;
+width: 300px;
+height:50px;}
+
+#enregistrer{ color: rgb(189, 77, 96);
+width: 150px;
+height: 30px;
+margin-top: 20px;
+margin-left: 80px;
+font-size: 15px;}
+
+.closebtn{
+    cursor: pointer;
+    position: absolute;
+    top: 7%;
+    left: 80%;
+    border: none;
+    background-color: white;
+    font-size: larger;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+   
+}
+.todo{ border-radius: 10px;
+    width: 900px;
+    height: 30px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}

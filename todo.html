@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO</title>
+    <link href="todo.css" rel="stylesheet">
+    <script src="todo.js" defer></script>
+    <script src="https://kit.fontawesome.com/2868a4adb9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="container">
+
+<h1 class="plan">What are you going to plan?</h1>
+
+    <button type="button" class="btnajout"  onclick="reinitialiserFormulaire();afficherPopup()" > 
+    <i class="fa-solid fa-square-plus fa-2xl" style="color: #bd587f;">
+    </i> Add New</button>
+
+<div id="popup">
+        <h2>Add a new TO DO</h2>
+
+        <form id="form">
+        <label id="title">Enter your to do title:</label>
+            <input  class="title" type="text" placeholder="entrer your todo title" required >
+        <label id="description">Enter your to do description:</label>
+            <input class="description" type="text" placeholder="entrer your todo description" required>
+        <label id="date">Enter your to do DeadLine:</label>
+            <input class="date" type="date" required>
+            <button id="enregistrer"  type="submit"  onclick="fermerPopup()" >Add and save</button>
+           
+        </form>
+       
+        <button onclick="fermerPopup()" class="closebtn">X</button>
+        
+</div>
+
+</div>
+
+ <div class="items">
+   <div class="todo">
+
+   </div>
+ </div>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
